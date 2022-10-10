@@ -1,4 +1,4 @@
-function Bath (props) {
+const Bath = (props) => {
   return (
     <h1>Bath</h1>
   )
