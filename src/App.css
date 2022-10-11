@@ -1,5 +1,113 @@
 div {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+div.floorplan {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.bedroom {
+  background-color: rgb(35, 93, 118);
+}
+
+.bathroom {
+  background-color: rgb(95, 119, 37);
+}
+
+.stacked {
+  flex-direction: column;
+}
+
+.left > div {
+  width: 100%;
+}
+
+.left > .bathroom {
+  height: 30%;
+}
+
+#top,
+#bottom {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+#living-room,
+.left {
+  width: 40%;
+}
+
+#kitchen > div:last-child {
+  flex-grow: 80;
+  width: 100%;
+}
+
+#kitchen > div:first-child {
+  width: 100%;
+  height: 10%;
+}
+
+#oven,
+#sink {
+  width: 50%;
+  height: 100%;
+}
+
+#kitchen {
+  width: 20%;
+  background-color: rgb(235, 151, 46);
+}
+
+#living-room {
+  background-color: rgb(188, 155, 111);
+}
+
+#oven {
+  background-color: rgb(187, 51, 19);
+}
+
+#sink {
+  background-color: rgb(127, 68, 17);
+}
+
+#bed1 {
+  height: 70%;
+}
+
+#top {
+  height: 60%;
+}
+
+#bottom {
+  height: 40%;
+}
+
+#root {
+  width: 40%;
+  height: 80vh;
+}
+
+#top > div,
+#bottom > div {
+  height: 100%;
+}
+
+#bottom > .bathroom {
+  width: 20%;
+}
+
+#bottom > .bedroom {
+  width: 40%;
 }

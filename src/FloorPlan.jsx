@@ -6,13 +6,19 @@ import Bath from "./Bath"
 function FloorPlan (props) {
   return (
     <>
-      <div><Kitchen /></div>
-      <div><LivingRoom /></div>
-      <div><Bedroom bedNum='1' /></div>
-      <div><Bedroom bedNum='2' /></div>
-      <div><Bedroom bedNum='3' /></div>
-      <div><Bath size='Half' /></div>
-      <div><Bath size='Full' /></div>
+      <div id="top">
+        <div className="stacked left">
+          <div className="bedroom" id="bed1"><Bedroom bedNum='1' /></div>
+          <div className="bathroom"><Bath size='Full' /></div>
+        </div>
+        <div id="living-room"><LivingRoom /></div>
+        <div className="stacked" id="kitchen"><Kitchen /></div>
+      </div>
+      <div id="bottom">
+        <div className="bedroom"><Bedroom bedNum='2' /></div>
+        <div className="bathroom"><Bath size='Half' /></div>
+        <div className="bedroom"><Bedroom bedNum='3' /></div>
+      </div>
     </>
   )
 }
